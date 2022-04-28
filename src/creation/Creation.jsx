@@ -19,10 +19,12 @@ export default function Creation({ count }) {
   }, []);
 
   useEffect(() => {
+    console.groupCollapsed('Creation.jsx() -> useEffect');
     console.log('count , createRefCount, useRefCount');
     console.log(count);
     console.log(createRefCount);
     console.log(useRefCount);
+    console.groupEnd();
   }, [count]);
 
   return (
